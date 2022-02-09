@@ -71,6 +71,7 @@ ADD /docker/config/php.ini /usr/local/etc/php/php.ini
 ADD /docker/config/xdebug.ini /usr/local/etc/php/conf.d/xdebug.ini
 RUN ln -s /etc/apache2/sites-available/magento.conf /etc/apache2/sites-enabled/magento.conf
 
+RUN a2enmod rewrite
 
 VOLUME /var/www/htdocs/html
 WORKDIR /var/www/htdocs/html

@@ -1,6 +1,7 @@
 version: '3'
 services:
   magento2-php:
+    container_name: magento
     image: magento2-php74
     build: .
     ports:
